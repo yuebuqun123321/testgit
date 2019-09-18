@@ -8,7 +8,7 @@ package com.wb.pattern.strategy.pay;
 public class PayTest {
 
     public static void main(String[] args) {
-        Order order = new Order("123456789", 550);
+        Order order = new Order("123456789000", 550);
         PayState payState = order.pay(PayStrategy.JD_PAY);
         System.out.println(payState);
     }
